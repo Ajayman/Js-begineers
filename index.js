@@ -41,3 +41,15 @@ let selectedColors = ['red', 'blue'];
 selectedColors[2] = 1;      //value can be added in an array
 console.log(selectedColors.length);  // length is the array property
 
+
+function greet(name, lastName){   //name is the parameter
+    console.log('Hello' + name + ' ' + lastname)
+}
+
+greet('John', 'Suwal');   //here John is the argument
+
+function square(number){
+    return number * number;
+}
+
+console.log(square(2));     // here square function is called and prints  returned value. Here two function are called log and square.
