@@ -34,4 +34,10 @@ person.name = 'John';
 let selection = 'name';
 person[selection] = 'Mary';     // here selection are dynamic so can select according to selection value
 
-console.log(person.name)
+console.log(person.name);
+
+
+let selectedColors = ['red', 'blue'];
+selectedColors[2] = 1;      //value can be added in an array
+console.log(selectedColors.length);  // length is the array property
+
