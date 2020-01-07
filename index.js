@@ -23,7 +23,7 @@ let selectedColor = null;
 // Object means part of the representaion of
 
 let person = {
-    name : 'Mosh',
+    name : 'Mosh',          //here name and age are properties of object
     age : 30
 };
 
@@ -31,6 +31,7 @@ let person = {
 person.name = 'John';
 
 //Bracket Notation
-person['name'] = 'Mary';
+let selection = 'name';
+person[selection] = 'Mary';     // here selection are dynamic so can select according to selection value
 
 console.log(person.name)
