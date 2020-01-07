@@ -12,7 +12,7 @@ const interestRate = 10;
 //interestRate is a constant variable or fixed
 
 //Two types of values we assign to variables(Primitive/Value Types and Reference Type)
-let name = 'Mosh';  // String Literal
+//let name = 'Mosh';  // String Literal
 let age = 30; // Number Literal
 let isApproved = false; // Boolean Literal
 let firstName = undefined;
@@ -43,7 +43,7 @@ console.log(selectedColors.length);  // length is the array property
 
 
 function greet(name, lastName){   //name is the parameter
-    console.log('Hello' + name + ' ' + lastname)
+    console.log('Hello' + name + ' ' + lastName)
 }
 
 greet('John', 'Suwal');   //here John is the argument
@@ -53,3 +53,28 @@ function square(number){
 }
 
 console.log(square(2));     // here square function is called and prints  returned value. Here two function are called log and square.
+
+var student = {
+    name: 'Ram',
+    age: 20,
+    heightCalc : function (height) {
+        if(height > 5){
+            console.log('He is tall')
+        }
+        else if(height < 5){
+            console.log('he is short')
+        }
+        else{
+            console.log('smart')
+        }
+    },
+    marks : [20, 30, 40, 50],
+    body : {
+        hairColor : ['black', 'white', 'red', 'purple'],
+        gender : ['male', 'female']
+    }
+};
+
+student.heightCalc(6);
+console.log(student['marks'][1]);
+console.log(student.body.gender[0]);
